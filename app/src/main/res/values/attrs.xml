@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="fl_textsize" format="dimension"/>
+    <attr name="fl_textcolor" format="color"/>
+    <attr name="fl_text_padding" format="dimension"/>
+    <attr name="fl_text_paddingleft" format="dimension"/>
+    <attr name="fl_text_paddingright" format="dimension"/>
+    <attr name="fl_text_paddingtop" format="dimension"/>
+    <attr name="fl_text_paddingbottom" format="dimension"/>
+    <attr name="fl_cellpadding" format="dimension"/>
+    <attr name="fl_cellmargin" format="dimension"/>
+    <declare-styleable name="FlowLayout_Style">
+        <attr name="fl_textsize"/>
+        <attr name="fl_textcolor"/>
+        <attr name="fl_text_padding"/>
+        <attr name="fl_text_paddingleft"/>
+        <attr name="fl_text_paddingright"/>
+        <attr name="fl_text_paddingtop"/>
+        <attr name="fl_text_paddingbottom"/>
+        <attr name="fl_cellpadding"/>
+        <attr name="fl_cellmargin"/>
+    </declare-styleable>
+</resources>

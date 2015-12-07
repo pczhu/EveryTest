@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fl="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<!--    <activitydialogtest.pczhu.com.everytest.MyCustomView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="djj"
+        android:gravity="center"
+        android:includeFontPadding="true"
+        android:background="@color/red"
+        android:textSize="36sp"/>
+
+    <activitydialogtest.pczhu.com.everytest.CustomLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/green">
+        <activitydialogtest.pczhu.com.everytest.MyCustomView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="djj"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            android:background="@color/red"
+            android:textSize="36sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:visibility="gone"/>
+        <activitydialogtest.pczhu.com.everytest.MyCustomView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="djj"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            android:background="@color/red"
+            android:layout_marginTop="20dp"
+            android:textSize="36sp"
+            android:visibility="gone"/>
+        <activitydialogtest.pczhu.com.everytest.MyCustomView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="djj"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            android:background="@color/red"
+            android:textSize="36sp"
+            android:visibility="gone"
+            android:layout_marginTop="250dp"
+            android:layout_marginBottom="20dp"
+            />
+
+    </activitydialogtest.pczhu.com.everytest.CustomLayout>-->
+
+    <activitydialogtest.pczhu.com.everytest.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cl"
+        android:background="@color/white"
+        fl:fl_text_padding="5dp"
+        fl:fl_cellpadding="5dp"
+        fl:fl_cellmargin="5dp"
+        fl:fl_textcolor="@android:color/black"
+        />
+</ScrollView>
