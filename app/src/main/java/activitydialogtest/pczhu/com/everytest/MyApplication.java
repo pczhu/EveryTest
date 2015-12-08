@@ -20,10 +20,10 @@ public class MyApplication extends Application{
         LogUtils.allowAll = true;
         LogUtils.allowD = false;
         LogUtils.allowW = false;
-        LogUtils.allowI = false;
+        LogUtils.allowI = true;
         LogUtils.allowV = false;
         LogUtils.allowV = false;
-        LogUtils.allowString = new String[]{"onCreate","onResume"};
+        //LogUtils.allowString = new String[]{"onCreate","onResume"};
     }
 
 }
