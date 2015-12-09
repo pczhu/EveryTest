@@ -7,8 +7,8 @@ import activitydialogtest.pczhu.com.everytest.R;
 
 /**
  * 名称：EveryTest
- * 作用：
- * 描述：
+ * 作用：测试柱状图
+ * 描述：测试柱状图
  * 作者：pczhu
  * 创建时间： 15/12/8 下午2:05
  * 版本：V1.0

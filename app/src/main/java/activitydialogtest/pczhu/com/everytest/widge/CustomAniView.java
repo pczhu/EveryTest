@@ -54,6 +54,7 @@ public class CustomAniView extends View{
     private void initview(Context context) {
         cell_margin = DisplayUtil.dip2px(getContext(),20.0f);
         cell_width = DisplayUtil.dip2px(getContext(),40.0f);
+        LogUtils.i("宽度"+cell_margin+":"+cell_width);
         getData();
     }
     private void getData(){
@@ -65,7 +66,7 @@ public class CustomAniView extends View{
             propertys.add(new ShapeProperty(i,
                     randomColor.randomColor(),
                     cell_width,
-                    (rand.nextInt(250)+30),
+                    DisplayUtil.dip2px(getContext(),rand.nextInt(240) + 80),
                     (cell_width+cell_margin)*i));
             LogUtils.i("目标单位"+propertys.toString());
         }
@@ -82,6 +83,8 @@ public class CustomAniView extends View{
         txtpaint = new Paint();
         txtpaint.setTextAlign(Paint.Align.CENTER);
         txtpaint.setColor(color);
+
+        txtpaint.setTextSize(DisplayUtil.sp2px(getContext(), 16.0f));
         return txtpaint;
     }
     @Override
