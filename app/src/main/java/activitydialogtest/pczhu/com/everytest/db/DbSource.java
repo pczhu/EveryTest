@@ -6,8 +6,8 @@ import com.lidroid.xutils.DbUtils;
 import com.lidroid.xutils.exception.DbException;
 
 /**
- * 名称：EveryTest
- * 作用：
+ * 名称：DbSource
+ * 作用：数据库配置 可用可不用
  * 描述：
  * 作者：pczhu
  * 创建时间： 15/12/14 上午9:57

@@ -9,9 +9,9 @@ import java.util.List;
 import activitydialogtest.pczhu.com.everytest.domain.UserInfo;
 
 /**
- * 名称：EveryTest
- * 作用：
- * 描述：
+ * 名称：DbAction
+ * 作用：数据库实现
+ * 描述：数据库接口的具体实现
  * 作者：pczhu
  * 创建时间： 15/12/14 上午10:00
  * 版本：V1.0

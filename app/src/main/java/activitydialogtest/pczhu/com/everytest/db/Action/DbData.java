@@ -5,8 +5,8 @@ import java.util.List;
 import activitydialogtest.pczhu.com.everytest.domain.UserInfo;
 
 /**
- * 名称：EveryTest
- * 作用：
+ * 名称：DbData
+ * 作用：数据库接口
  * 描述：
  * 作者：pczhu
  * 创建时间： 15/12/14 上午10:02

@@ -3,8 +3,8 @@ package activitydialogtest.pczhu.com.everytest.db.Action;
 import activitydialogtest.pczhu.com.everytest.domain.UserInfo;
 
 /**
- * 名称：EveryTest
- * 作用：
+ * 名称：UserData
+ * 作用：针对UserInfo的数据接口
  * 描述：
  * 作者：pczhu
  * 创建时间： 15/12/14 下午12:02
