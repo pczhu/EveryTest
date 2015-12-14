@@ -15,6 +15,15 @@ import java.math.BigInteger;
 
 import activitydialogtest.pczhu.com.everytest.R;
 
+/**
+ * 名称：MainActivity
+ * 作用：斐波那契数列的优化
+ * 描述：采用缓存优化常用算法会大大增加性能
+ * 作者：pczhu
+ * 创建时间： 15/12/9 下午1:52
+ * 版本：V1.0
+ * 修改历史：
+ */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
 

@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import activitydialogtest.pczhu.com.everytest.R;
 
 /**
- * 名称：EveryTest
+ * 名称：ThirdActvity
  * 作用：测试柱状图
  * 描述：测试柱状图
  * 作者：pczhu

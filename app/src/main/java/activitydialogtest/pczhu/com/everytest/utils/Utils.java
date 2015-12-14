@@ -5,11 +5,11 @@ import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
 /**
- * 名称：EveryTest
+ * 名称：Utils
  * 作用：
- * 描述：
+ * 描述：拿取屏幕宽度高度
  * 作者：pczhu
- * 创建时间： 15/12/2 下午2:19
+ * 创建时间： 15/12/9 下午1:58
  * 版本：V1.0
  * 修改历史：
  */

@@ -18,9 +18,9 @@ import activitydialogtest.pczhu.com.everytest.utils.ImageUtils;
 import activitydialogtest.pczhu.com.everytest.utils.LogUtils;
 
 /**
- * 名称：EveryTest
+ * 名称：FourActivity
  * 作用：
- * 描述：手势交互监听
+ * 描述：手势交互监听 一个图片上下滑动 左右滑动的东东
  * 作者：pczhu
  * 创建时间： 15/12/8 下午4:01
  * 版本：V1.0
@@ -104,39 +104,34 @@ public class FourActivity extends AppCompatActivity implements View.OnTouchListe
             if(Math.abs(x) > Math.abs(y)){//左右
                 if(x > 0 && Math.abs(velocityX) > VX){//向左
                     LogUtils.i("向左Fling");
-                    Animation left_out = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.four_left_out);
-                    Animation right_in = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.four_right_in);
-                    viewFlipper.setOutAnimation(left_out);
-                    viewFlipper.setInAnimation(right_in);
+                    setAnimation(R.anim.four_left_out, R.anim.four_right_in);
                     viewFlipper.showNext();
 
                 }else if( Math.abs(velocityX) > VX){
                     LogUtils.i("向右Fling");
-                    Animation left_in = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.four_left_in);
-                    Animation right_out = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.four_right_out);
-                    viewFlipper.setOutAnimation(right_out);
-                    viewFlipper.setInAnimation(left_in);
+                    setAnimation(R.anim.four_right_out, R.anim.four_left_in);
                     viewFlipper.showPrevious();
 
                 }
             }else{//上下
                 if(y > 0 && Math.abs(velocityY) > VY){//向上
                     LogUtils.i("向上Fling");
-                    Animation top_out = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.four_top_out);
-                    Animation bottom_in = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.four_bottom_in);
-                    viewFlipper.setOutAnimation(top_out);
-                    viewFlipper.setInAnimation(bottom_in);
+                    setAnimation(R.anim.four_top_out, R.anim.four_bottom_in);
                     viewFlipper.showNext();
                 }else if( Math.abs(velocityY) > VY){
                     LogUtils.i("向下Fling");
-                    Animation top_in = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.four_top_in);
-                    Animation bottom_out = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.four_bottom_out);
-                    viewFlipper.setOutAnimation(bottom_out);
-                    viewFlipper.setInAnimation(top_in);
+                    setAnimation(R.anim.four_bottom_out, R.anim.four_top_in);
                     viewFlipper.showPrevious();
                 }
             }
             return true;
+        }
+
+        private void setAnimation(int out, int in) {
+            Animation ani_out = AnimationUtils.loadAnimation(getApplicationContext(), out);
+            Animation ani_in = AnimationUtils.loadAnimation(getApplicationContext(), in);
+            viewFlipper.setOutAnimation(ani_out);
+            viewFlipper.setInAnimation(ani_in);
         }
 
         @Override

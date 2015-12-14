@@ -12,9 +12,9 @@ import activitydialogtest.pczhu.com.everytest.R;
 import activitydialogtest.pczhu.com.everytest.utils.LogUtils;
 
 /**
- * 名称：EveryTest
- * 作用：
- * 描述：
+ * 名称：SecondActivity
+ * 作用：流标签
+ * 描述：一个流标签的简单实现 为了学习页面布局
  * 作者：pczhu
  * 创建时间： 15/11/30 下午5:27
  * 版本：V1.0
