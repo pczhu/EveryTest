@@ -1,5 +1,8 @@
 package activitydialogtest.pczhu.com.everytest.domain;
 
+import org.xutils.db.annotation.Column;
+import org.xutils.db.annotation.Table;
+
 import java.io.Serializable;
 
 /**
@@ -11,11 +14,15 @@ import java.io.Serializable;
  * 版本：V1.0
  * 修改历史：
  */
+@Table(name = "parent", onCreated = "CREATE UNIQUE INDEX index_name ON UserInfo(name,email,headpic,age)")
 public class UserInfo implements Serializable {
-
+    @Column(name = "id", isId = true)
     private String id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "headpic")
     private String headpic;
+    @Column(name = "age")
     private String age;
 
     public String getId() {

@@ -3,7 +3,6 @@ package activitydialogtest.pczhu.com.everytest.db;
 import android.content.Context;
 
 import com.lidroid.xutils.DbUtils;
-import com.lidroid.xutils.exception.DbException;
 
 /**
  * 名称：DbSource

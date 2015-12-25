@@ -20,7 +20,7 @@ public interface DbData {
      * 存入对象
      * @param object 目标对象
      */
-    public void setObject(Object object);
+    public <T> void setObject(T object);
 
     /**
      * 通过关键字取出数据
@@ -48,5 +48,5 @@ public interface DbData {
     public List<Object> getDataByObjectNameAndKey(Class clz,String name,String sign,String target);
 
 
-
+    public boolean setColumn(Class clz,String name,String sign,String target,String... value);
 }

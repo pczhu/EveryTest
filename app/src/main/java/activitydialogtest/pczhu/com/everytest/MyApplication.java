@@ -2,6 +2,7 @@ package activitydialogtest.pczhu.com.everytest;
 
 import android.app.Application;
 
+import activitydialogtest.pczhu.com.everytest.commom.InitEveryDependence;
 import activitydialogtest.pczhu.com.everytest.db.DbSource;
 import activitydialogtest.pczhu.com.everytest.utils.LogUtils;
 
@@ -24,8 +25,10 @@ public class MyApplication extends Application{
         LogUtils.allowI = false;
         LogUtils.allowV = false;
         LogUtils.allowV = false;
-        LogUtils.allowString = new String[]{"NinethActivity"};
+        LogUtils.allowString = new String[]{"DbAction","InitServices"};
         DbSource.getInstance(this).createSource("everytest");
+
+        InitEveryDependence.getInstance(getApplicationContext(),this).start();
     }
 
 }
